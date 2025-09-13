@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .nav-link {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 0;
+    }
+
+    .floating-contact {
+      display: inline-block;
+      background-color: #ffb6b9;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .floating-contact:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar-pastel">
+    <div class="container">
+
+      <!-- No brand on the left -->
+
+      <!-- Hamburger button aligned right -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="Aboutme.html">About Me</a></li>
+          <li><a class="nav-link" href="Contactme.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-me container my-5">
+    <h2>About Me</h2>
+    <p>
+      I'm Elizabeth — originally from Belarus, now living in Qatar. I graduated as a teacher and spent 9 years in education, helping students grow and succeed.
+    </p>
+    <p>Take a moment to enjoy this beautiful glimpse of Belarus — my home country.</p>
+
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/QNdYybI3Pgs?si=plb9url_O-lZXx4u"
+        title="Beautiful Belarus"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p>
+      About 10 years ago, I moved to Qatar — and along the way, discovered a new passion: Web design. I fell in love with the process of building elegant, user-focused websites that feel as good as they look.
+    </p>
+
+    <h4 class="photo-heading">Moments I’ve captured while living in Qatar:</h4>
+    <div class="photo-gallery">
+      <img src="pic1.JPG" alt="Photo taken in Qatar" />
+      <img src="pic2.JPG" alt="Photo taken in Qatar" />
+      <img src="pic3.JPG" alt="Photo taken in Qatar" />
+      <img src="pic4.JPG" alt="Photo taken in Qatar" />
+      <img src="pic5.JPG" alt="Photo taken in Qatar" />
+    </div>
+
+    <p><br />
+      Today, I use the skills I developed as a teacher — communication, structure, empathy — to create websites that are clear, purposeful, and visually engaging.
+    </p>
+  </section> <!-- ✅ Closed section properly -->
+
+  <!-- Centered Contact Me Button -->
+  <div class="contact-wrapper">
+    <a href="Contactme.html" class="floating-contact">📩 Contact Me</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scroll to top on load -->
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
+
+</body>
+</html>

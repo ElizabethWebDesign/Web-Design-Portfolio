@@ -1,0 +1,640 @@
+/* Reset and Box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #faf0e6;
+  font-family: 'Raleway', sans-serif; /* use Raleway globally */
+  padding: 0 1rem; /* horizontal padding */
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Wrapper for Mac image */
+.mac-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mac-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.screen-text {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 70%;
+  padding: 0 5px;  /* small padding to keep text off edges */
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 4px 7px rgba(2, 2, 5, 0.37);
+  pointer-events: none;
+  white-space: normal;      /* allow wrapping */
+  overflow-wrap: break-word;/* break long words */
+  box-sizing: border-box;   /* include padding in width */
+}
+.screen-text h1 {
+  font-size: min(3vw, 28px); /* scale with screen size */
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+
+
+/* Headings */
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;                 /* slightly larger for emphasis */
+  font-weight: 600;                /* a bit bolder for impact */
+  color: #222;                     /* clean dark text */
+  background: linear-gradient(135deg, bisque, #ffe7c7); /* softer gradient */
+  padding: 1rem 2rem;
+  border-radius: 12px;             /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow for depth */
+  text-align: center;
+  letter-spacing: 1px;             /* more spacious feel */
+  line-height: 1.4;
+  margin: 2rem auto;               /* spacing around headings */
+  max-width: 700px;                /* keeps it neat on wide screens */
+}
+
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  background-color: dimgrey;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Elizabeth span */
+.elizabeth {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+  color: peachpuff;
+  padding: 0 0.3rem;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Intro link paragraph */
+.intro-link {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  font-family: Georgia, serif;
+  color: #444;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.intro-link a {
+  font-family: 'Dancing Script', cursive;
+  color: darksalmon;
+  text-decoration: underline;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.intro-link a:hover {
+  text-decoration: underline;
+}
+
+/* About me section */
+.about-me {
+  width: 100%;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #f9f4f0;
+  border-left: 9px solid #d4a373;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: Georgia, serif;
+  line-height: 1.8;
+  font-size: 2rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .about-me {
+    padding: 2rem 1rem;
+  }
+}
+
+.about-me h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about-me p {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #4a3f35;
+  margin-bottom: 1.8rem;
+  font-family: Georgia, serif;
+  text-align: justify;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Video container */
+.video-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo gallery */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1000px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(1, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+/* Photo heading */
+h4 {
+  text-align: center;
+  color: dimgrey;
+  font-family: 'Dancing Script', cursive;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+/* Pastel Navbar styling */
+.custom-navbar-pastel {
+  background: linear-gradient(90deg, #fce4ec, #e3f2fd);
+  padding: 1rem; /* fixed rem value */
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0 12px 12px 0;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+/* Navbar Brand */
+.custom-navbar-pastel .navbar-brand {
+  color: #6a4c93;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar-pastel .navbar-brand:hover {
+  color: #ffb6b9;
+}
+
+/* Nav Links */
+.custom-navbar-pastel .nav-link {
+  color: #5c5470;
+  font-weight: 500;
+  margin-left: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+}
+
+/* Hover underline effect */
+.custom-navbar-pastel .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffb6b9;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar-pastel .nav-link:hover:after {
+  width: 100%;
+}
+
+.custom-navbar-pastel .nav-link:hover {
+  color: #ffb6b9;
+}
+
+/* Navbar toggler */
+.custom-navbar-pastel .navbar-toggler {
+  border: none;
+}
+
+.custom-navbar-pastel .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28106, 76, 147, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* 🌸 General Page Styling */
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* /* 🌸 Softer Pastel Navbar */
+.custom-navbar-pastel {
+  background: linear-gradient(90deg, #ffe0f0, #c8e7ff, #e5d9f2); /* light pink → baby blue → lavender */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-navbar-pastel .navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a148c; /* deep pastel purple */
+}
+
+.custom-navbar-pastel .nav-link {
+  color: #4a148c !important;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.custom-navbar-pastel .nav-link:hover,
+.custom-navbar-pastel .nav-link.active {
+  color: #ff8a80 !important; /* pastel coral highlight */
+  transform: scale(1.05);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* keeps burger white for mobile */
+}
+
+/* 🌸 Contact Section */
+.contact-container {
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+}
+
+.contact-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6a4c93;
+  margin-bottom: 1.5rem;
+}
+
+/* 🌸 Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  background: #f3e5f5;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #4a148c;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-item:hover {
+  background: #e1bee7;
+  transform: translateY(-3px);
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  fill: #6a4c93;
+  margin-right: 10px;
+}
+
+/* 🌸 Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #ba68c8;
+  box-shadow: 0 0 10px rgba(186, 104, 200, 0.25);
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #ba68c8, #9575cd);
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #9575cd, #7e57c2);
+  transform: translateY(-2px);
+}
+
+/* 🌸 Thank You Page */
+.thankyou-body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-box {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.thankyou-box .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.thankyou-box h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #6a11cb;
+  margin-bottom: 1rem;
+}
+
+.thankyou-box p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.thankyou-box a {
+  display: inli/* 🌸 Contact Section */
+.contact-container {
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+}
+
+.contact-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6a4c93;
+  margin-bottom: 1.5rem;
+}
+
+/* 🌸 Contact Info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  background: #f3e5f5;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #4a148c;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-item:hover {
+  background: #e1bee7;
+  transform: translateY(-3px);
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  fill: #6a4c93;
+  margin-right: 10px;
+}
+
+/* 🌸 Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #ba68c8;
+  box-shadow: 0 0 10px rgba(186, 104, 200, 0.25);
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #ba68c8, #9575cd);
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #9575cd, #7e57c2);
+  transform: translateY(-2px);
+}
+
+//* 🌸 Thank You Page */
+.thankyou-body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-box {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.thankyou-box .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: bounce 1s ease forwards;
+}
+
+.thankyou-box h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #6a11cb;
+  margin-bottom: 1rem;
+}
+
+.thankyou-box p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.thankyou-box a {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.thankyou-box a:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%   { transform: scale(0.8); opacity: 0; }
+  50%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
