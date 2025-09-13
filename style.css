@@ -1,20 +1,21 @@
-/* Reset and Box sizing */
+/* 🌸 Reset and Box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
+/* 🌸 Global Body Styles */
 body {
-  background-color: #faf0e6;
-  font-family: 'Raleway', sans-serif; /* use Raleway globally */
-  padding: 0 1rem; /* horizontal padding */
-  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #333;
   margin: 0;
+  padding: 0 1rem;
+  overflow-x: hidden;
 }
 
-/* Wrapper for Mac image */
+/* 🌸 Wrapper for Mac image */
 .mac-wrapper {
   position: relative;
   width: 100%;
@@ -35,42 +36,40 @@ body {
   transform: translate(-50%, -50%);
   width: 60%;
   max-width: 70%;
-  padding: 0 5px;  /* small padding to keep text off edges */
+  padding: 0 5px;
   text-align: center;
   color: white;
   font-family: Arial, sans-serif;
   text-shadow: 0 4px 7px rgba(2, 2, 5, 0.37);
   pointer-events: none;
-  white-space: normal;      /* allow wrapping */
-  overflow-wrap: break-word;/* break long words */
-  box-sizing: border-box;   /* include padding in width */
+  white-space: normal;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
+
 .screen-text h1 {
-  font-size: min(3vw, 28px); /* scale with screen size */
+  font-size: min(3vw, 28px);
   max-width: 100%;
   line-height: 1.2;
   word-break: break-word;
 }
 
-
-
-/* Headings */
+/* 🌸 Headings */
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 2rem;                 /* slightly larger for emphasis */
-  font-weight: 600;                /* a bit bolder for impact */
-  color: #222;                     /* clean dark text */
-  background: linear-gradient(135deg, bisque, #ffe7c7); /* softer gradient */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  background: linear-gradient(135deg, bisque, #ffe7c7);
   padding: 1rem 2rem;
-  border-radius: 12px;             /* rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow for depth */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
-  letter-spacing: 1px;             /* more spacious feel */
+  letter-spacing: 1px;
   line-height: 1.4;
-  margin: 2rem auto;               /* spacing around headings */
-  max-width: 700px;                /* keeps it neat on wide screens */
+  margin: 2rem auto;
+  max-width: 700px;
 }
-
 
 h3 {
   font-family: 'Dancing Script', cursive;
@@ -80,12 +79,11 @@ h3 {
   padding: 1.5rem;
   font-size: 3rem;
   font-weight: 700;
-  margin-top: 0;
   letter-spacing: 1px;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* Elizabeth span */
+/* 🌸 Special span */
 .elizabeth {
   font-family: "Archivo Black", sans-serif;
   font-size: 2rem;
@@ -94,7 +92,7 @@ h3 {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Intro link paragraph */
+/* 🌸 Intro Link */
 .intro-link {
   text-align: center;
   font-size: 1.5rem;
@@ -116,7 +114,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* About me section */
+/* 🌸 About Me Section */
 .about-me {
   width: 100%;
   max-width: 900px;
@@ -129,7 +127,6 @@ h3 {
   line-height: 1.8;
   font-size: 2rem;
   color: #333;
-  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
@@ -149,12 +146,11 @@ h3 {
   line-height: 2;
   color: #4a3f35;
   margin-bottom: 1.8rem;
-  font-family: Georgia, serif;
   text-align: justify;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* Video container */
+/* 🌸 Video container */
 .video-container {
   max-width: 800px;
   margin: 2rem auto;
@@ -169,7 +165,7 @@ h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Photo gallery */
+/* 🌸 Photo gallery */
 .photo-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -183,13 +179,12 @@ h3 {
 .photo-gallery img {
   width: 100%;
   max-width: 300px;
-  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(1, 0, 0, 0.5);
   object-fit: cover;
 }
 
-/* Photo heading */
+/* 🌸 Photo heading */
 h4 {
   text-align: center;
   color: dimgrey;
@@ -197,96 +192,26 @@ h4 {
   padding: 1.5rem;
   font-size: 2rem;
   font-weight: 500;
-  margin-top: 0;
   letter-spacing: 1px;
 }
 
-/* Pastel Navbar styling */
+/* 🌸 Navbar */
 .custom-navbar-pastel {
-  background: linear-gradient(90deg, #fce4ec, #e3f2fd);
-  padding: 1rem; /* fixed rem value */
-  width: 100%;
-  margin: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  font-family: 'Poppins', sans-serif;
-  border-radius: 0 12px 12px 0;
-  position: relative;
-  left: 0;
-  right: 0;
-}
-
-/* Navbar Brand */
-.custom-navbar-pastel .navbar-brand {
-  color: #6a4c93;
-  font-weight: 600;
-  font-size: 1.6rem;
-  transition: color 0.3s ease;
-}
-
-.custom-navbar-pastel .navbar-brand:hover {
-  color: #ffb6b9;
-}
-
-/* Nav Links */
-.custom-navbar-pastel .nav-link {
-  color: #5c5470;
-  font-weight: 500;
-  margin-left: 1rem;
-  position: relative;
-  transition: color 0.3s ease;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
-}
-
-/* Hover underline effect */
-.custom-navbar-pastel .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  height: 2px;
-  width: 0;
-  background-color: #ffb6b9;
-  transition: width 0.3s ease;
-}
-
-.custom-navbar-pastel .nav-link:hover:after {
-  width: 100%;
-}
-
-.custom-navbar-pastel .nav-link:hover {
-  color: #ffb6b9;
-}
-
-/* Navbar toggler */
-.custom-navbar-pastel .navbar-toggler {
-  border: none;
-}
-
-.custom-navbar-pastel .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28106, 76, 147, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* 🌸 General Page Styling */
-body {
-  font-family: 'Raleway', sans-serif;
-  background: linear-gradient(135deg, #fdfbfb, #ebedee);
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-/* /* 🌸 Softer Pastel Navbar */
-.custom-navbar-pastel {
-  background: linear-gradient(90deg, #ffe0f0, #c8e7ff, #e5d9f2); /* light pink → baby blue → lavender */
+  background: linear-gradient(90deg, #ffe0f0, #c8e7ff, #e5d9f2);
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .custom-navbar-pastel .navbar-brand {
   font-family: 'Dancing Script', cursive;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #4a148c; /* deep pastel purple */
+  color: #4a148c;
+}
+
+.custom-navbar-pastel .navbar-brand:hover {
+  color: #ffb6b9;
 }
 
 .custom-navbar-pastel .nav-link {
@@ -294,11 +219,29 @@ body {
   font-weight: 500;
   margin-left: 1rem;
   transition: color 0.3s ease, transform 0.2s;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.custom-navbar-pastel .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ff8a80;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar-pastel .nav-link:hover::after {
+  width: 100%;
 }
 
 .custom-navbar-pastel .nav-link:hover,
 .custom-navbar-pastel .nav-link.active {
-  color: #ff8a80 !important; /* pastel coral highlight */
+  color: #ff8a80 !important;
   transform: scale(1.05);
 }
 
@@ -307,7 +250,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  filter: brightness(0) invert(1); /* keeps burger white for mobile */
+  filter: brightness(0) invert(1);
 }
 
 /* 🌸 Contact Section */
@@ -422,7 +365,7 @@ body {
 .thankyou-body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(135deg, #fce3ec, #ffe7c7); /* soft pastel pink → peach */
+  background: linear-gradient(135deg, #fce3ec, #ffe7c7);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -461,11 +404,10 @@ body {
   line-height: 1.6;
 }
 
-/* 🌸 Back Home button */
 .thankyou-box .back-home {
   display: inline-block;
   text-decoration: none;
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* soft purple → pink */
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
   color: white;
   padding: 0.9rem 2rem;
   border-radius: 50px;
@@ -481,10 +423,23 @@ body {
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
+/* 🌸 Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes bounce {
+  0%   { transform: scale(0.8); opacity: 0; }
+  50%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* 🌸 Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 
 @keyframes bounce {
   0%   { transform: scale(0.8); opacity: 0; }
